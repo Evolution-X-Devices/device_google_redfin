@@ -15,12 +15,6 @@ product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 # Camera extensions
 product/app/PixelCameraServicesRedfin/PixelCameraServicesRedfin.apk;PRESIGNED
 
-# Charger
-product/etc/res/images/charger/battery_fail.png
-product/etc/res/images/charger/battery_scale.png
-product/etc/res/images/charger/main_font.png
-product/etc/res/values/charger/animation.txt
-
 # Felica
 product/etc/felica/common.cfg
 product/etc/felica/mfm.cfg
@@ -108,14 +102,11 @@ system_ext/etc/permissions/com.google.android.camera.extensions.xml
 system_ext/framework/com.google.android.camera.extensions.jar
 
 # HBM
-system_ext/priv-app/HbmSVManager/HbmSVManager.apk
+system_ext/priv-app/HbmSVManager/HbmSVManager.apk|fa6024ec1a34cf2ed74b6d3e3d78ac5f9ebdd8cf
 
 # Hotword
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
-# NFC
-system_ext/priv-app/PixelNfc/PixelNfc.apk
 
 # Permissions
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
@@ -130,7 +121,9 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
+system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk
 
 # Qualcomm Radio
@@ -173,3 +166,11 @@ system_ext/etc/permissions/vzw_mvs_permissions.xml
 system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 system_ext/priv-app/OBDM_Permissions/OBDM_Permissions.apk;PRESIGNED
 system_ext/priv-app/obdm_stub/obdm_stub.apk;PRESIGNED
+
+# vendor partition
+
+# Wi-Fi service
+vendor/bin/hw/vendor.google.wifi_ext-service-vendor|1edcbf349a1fcf471f726bcbb5eb31a2e6db89fa
+vendor/etc/init/vendor.google.wifi_ext-service.rc|8565ca57da131819441d6fb87abfcae134ed2ef9
+vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml|6c411f5a63ebc252698fc880d8813ca8c9c63d9c
+vendor/lib64/vendor.google.wifi_ext-V3-ndk.so|d199582834b5b266426ae8dac5692cd1bb2b9552

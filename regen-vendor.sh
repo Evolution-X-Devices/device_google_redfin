@@ -98,7 +98,6 @@ VENDOR_SKIP_FILES=(
     "bin/hostname"
     "bin/hw/android.hardware.audio.service"
     "bin/hw/android.hardware.boot@1.2-service"
-    "bin/hw/android.hardware.camera.provider@2.7-service-google"
     "bin/hw/android.hardware.cas-service.example"
     "bin/hw/android.hardware.cas@1.2-service"
     "bin/hw/android.hardware.contexthub-service.generic"
@@ -549,9 +548,7 @@ VENDOR_SKIP_FILES=(
     "lib/libopus.so"
     "lib/libpixelatoms_defs.so"
     "lib/libpixelhealth.so"
-    "lib/libprotobuf-cpp-full-21.7.so"
     "lib/libprotobuf-cpp-full-3.9.1.so"
-    "lib/libprotobuf-cpp-lite-21.7.so"
     "lib/libreference-ril.so"
     "lib/libril.so"
     "lib/librilutils.so"
@@ -1030,9 +1027,7 @@ VENDOR_SKIP_FILES=(
     "lib64/libpixelatoms_defs.so"
     "lib64/libpixelhealth.so"
     "lib64/libpixelstats.so"
-    "lib64/libprotobuf-cpp-full-21.7.so"
     "lib64/libprotobuf-cpp-full-3.9.1.so"
-    "lib64/libprotobuf-cpp-lite-21.7.so"
     "lib64/libreference-ril.so"
     "lib64/libril.so"
     "lib64/librilutils.so"
@@ -1169,6 +1164,12 @@ VENDOR_SKIP_FILES=(
     "lib64/android.hardware.camera.device@1.0.so"
     "lib64/android.hardware.camera.device@3.2.so"
     "lib64/android.hardware.camera.provider@2.4.so"
+
+    # Charger
+    "res/images/charger/animation.txt"
+    "res/images/charger/battery_fail.png"
+    "res/images/charger/battery_scale.png"
+    "res/images/charger/main_font.png"
 
     # CHRE
     "bin/chre"
@@ -1343,19 +1344,6 @@ VENDOR_SKIP_FILES=(
     "lib64/libstagefrighthw.so"
     "lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so"
 
-    # Nos
-    "lib64/libnos.so"
-    "lib64/libnos_client_citadel.so"
-    "lib64/libnos_datagram.so"
-    "lib64/libnos_datagram_citadel.so"
-    "lib64/libnos_feature.so"
-    "lib64/libnos_transport.so"
-    "lib64/libnosprotos.so"
-    "lib64/nos_app_avb.so"
-    "lib64/nos_app_identity.so"
-    "lib64/nos_app_keymaster.so"
-    "lib64/nos_app_weaver.so"
-
     # Power
     "lib/android.hardware.power@1.0.so"
     "lib/android.hardware.power@1.1.so"
@@ -1414,6 +1402,12 @@ VENDOR_SKIP_FILES=(
     "lib/libwifi-hal-qcom.so"
     "lib64/libwifi-hal-ctrl.so"
     "lib64/libwifi-hal-qcom.so"
+
+    # Wi-Fi service
+    "bin/hw/vendor.google.wifi_ext-service-vendor"
+    "etc/init/vendor.google.wifi_ext-service.rc"
+    "etc/vintf/manifest/manifest_wifi_ext_aidl.xml"
+    "lib64/vendor.google.wifi_ext-V1-ndk.so"
 
     # Misc interfaces
     "lib/android.hardware.authsecret@1.0.so"

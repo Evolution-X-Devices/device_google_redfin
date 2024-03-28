@@ -23,6 +23,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/evolution_redfin.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_redfin-userdebug \
-    aosp_redfin_vf-userdebug \
+    aosp_redfin-trunk_staging-userdebug \
+    aosp_redfin_vf-trunk_staging-userdebug \
+    evolution_redfin-trunk_staging-userdebug \
     evolution_redfin-userdebug
