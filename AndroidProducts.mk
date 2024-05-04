@@ -25,4 +25,4 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     aosp_redfin-trunk_staging-userdebug \
     aosp_redfin_vf-trunk_staging-userdebug \
-    lineage_redfin-trunk_staging-userdebug
+    lineage_redfin-userdebug
