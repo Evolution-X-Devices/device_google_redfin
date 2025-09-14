@@ -27,6 +27,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=google/redfin/redfin:14/UP1A.231105.001.B2/11260668:user/release-keys \
     DeviceProduct=redfin
 
+ifeq ($(WITH_GMS),false)
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/priv-app/OmniStyle/OmniStyle.apk
+else
 TARGET_USES_MINI_GAPPS := true
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
@@ -36,5 +40,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/permissions/privapp-permissions-google.xml \
     system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
     system/priv-app/TagGoogle/TagGoogle.apk
+endif
 
 $(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
