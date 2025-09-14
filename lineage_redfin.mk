@@ -27,4 +27,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=google/redfin/redfin:14/UP1A.231105.001.B2/11260668:user/release-keys \
     DeviceProduct=redfin
 
+TARGET_USES_MINI_GAPPS := true
+
 $(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
