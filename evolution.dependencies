@@ -6,11 +6,13 @@
   {
     "repository": "device_google_redbull",
     "target_path": "device/google/redbull",
-    "branch": "redfin/vic"
+    "branch": "vic"
   },
   {
-    "repository": "vendor_google_redfin",
-    "target_path": "vendor/google/redfin"
+    "repository": "apelete/proprietary_vendor_google_redfin",
+    "target_path": "vendor/google/redfin",
+    "remote" : "github-non-los",
+    "branch": "lineage-22.2"
   },
   {
     "repository": "kernel_google_redbull",
