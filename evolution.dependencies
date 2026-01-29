@@ -1,9 +1,5 @@
 [
   {
-    "repository": "device_google_gs-common",
-    "target_path": "device/google/gs-common"
-  },
-  {
     "repository": "device_google_redbull",
     "target_path": "device/google/redbull",
     "branch": "bka"
